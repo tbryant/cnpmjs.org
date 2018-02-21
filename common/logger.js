@@ -7,7 +7,6 @@ const utility = require('utility');
 const util = require('util');
 const os = require('os');
 const config = require('../config');
-const mail = require('./mail');
 
 const isTEST = process.env.NODE_ENV === 'test';
 const categories = ['sync_info', 'sync_error'];
