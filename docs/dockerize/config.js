@@ -55,7 +55,7 @@ var config = {
     interval: 1000 * 60 * 60 * 24,
     whiteList: [],
     blackList: [],
-    message: 'request frequency limited, any question, please contact fengmk2@gmail.com',
+    message: 'request frequency limited',
   },
 
   enableCompress: false, // enable gzip response or not
@@ -63,9 +63,7 @@ var config = {
   // default system admins
   admins: {
     // name: email
-    fengmk2: 'fengmk2@gmail.com',
-    admin: 'admin@cnpmjs.org',
-    dead_horse: 'dead_horse@qq.com',
+    tyler: 'tyler@nstrumenta.com'
   },
 
   // email notification for errors
@@ -73,7 +71,7 @@ var config = {
   mail: {
     enable: false,
     appname: 'cnpmjs.org',
-    from: 'cnpmjs.org mail sender <adderss@gmail.com>',
+    from: 'cnpmjs.org mail sender <address@gmail.com>',
     service: 'gmail',
     auth: {
       user: 'address@gmail.com',
@@ -81,11 +79,11 @@ var config = {
     }
   },
 
-  logoURL: 'https://os.alipayobjects.com/rmsportal/oygxuIUkkrRccUz.jpg', // cnpm logo image url
+  logoURL: '', // cnpm logo image url
   adBanner: '',
   customReadmeFile: '', // you can use your custom readme file instead the cnpm one
   customFooter: '', // you can add copyright and site total script html here
-  npmClientName: 'cnpm', // use `${name} install package`
+  npmClientName: 'nst', // use `${name} install package`
   packagePageContributorSearch: true, // package page contributor link to search, default is true
 
   // max handle number of package.json `dependencies` property
@@ -168,11 +166,11 @@ var config = {
   // sync source, upstream registry
   // If you want to directly sync from official npm's registry
   // please drop them an email first
-  sourceNpmRegistry: 'https://registry.npm.taobao.org',
+  sourceNpmRegistry: 'https://registry.npmjs.org',
 
   // upstream registry is base on cnpm/cnpmjs.org or not
   // if your upstream is official npm registry, please turn it off
-  sourceNpmRegistryIsCNpm: true,
+  sourceNpmRegistryIsCNpm: false,
 
   // if install return 404, try to sync from source registry
   syncByInstall: true,
